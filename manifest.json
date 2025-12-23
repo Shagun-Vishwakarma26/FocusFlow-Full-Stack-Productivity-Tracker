@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "FocusFlow Tracker",
+  "version": "1.0",
+  "description": "Tracks your browsing habits to help you stay productive.",
+  "permissions": ["tabs", "storage", "idle"],
+  "host_permissions": ["http://localhost:5000/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
